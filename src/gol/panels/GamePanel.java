@@ -108,14 +108,10 @@ public class GamePanel extends JPanel implements MouseListener {
 		Graphics2D g2d = (Graphics2D) g;
 		
 		g2d.setColor(Color.red);
-		fillGrid.forEach(cell -> {
-			g2d.fill(cell);
-		});
+		fillGrid.forEach(cell -> g2d.fill(cell));
 		
 		g2d.setColor(Color.black);
-		grid.forEach(cell -> {
-			g2d.draw(cell);
-		});
+		grid.forEach(cell -> g2d.draw(cell));
 	}
 	
 	public void runGol() throws InterruptedException {
